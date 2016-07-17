@@ -7,26 +7,33 @@
 //
 
 #import "Cell_ShareItem.h"
+//#import "M_Share.h"
 
 @implementation Cell_ShareItem
 
-- (void)layoutUI:(NSMutableDictionary *)shareModel {
+- (void)layoutUI:(id )shareModel {
     if (!_imageView) {
         [self.contentView addSubview:self.imageView];
     }
-    _imageView.image = [UIImage imageNamed:shareModel[@"imageName"]];
-    
     if (!_titleLabel) {
         [self.contentView addSubview:self.titleLabel];
     }
-    _titleLabel.text = shareModel[@"title"];
     
+    NSDictionary *model = (NSDictionary *)shareModel;
+    _imageView.image = [UIImage imageNamed:model[@"imageName"]];
+    _titleLabel.text = model[@"title"];
+    
+    //使用模型的布局方式
+//    M_Share *model = (M_Share *)shareModel;
+//    _imageView.image = [UIImage imageNamed:model.imageName];
+//    _titleLabel.text = model.title;
+
 }
 
 - (UIImageView *)imageView {
     if (!_imageView) {
         _imageView = [[UIImageView alloc]initWithFrame:CGRectMake(20, 10, 60, 60)];
-        _imageView.backgroundColor = [UIColor redColor];
+        _imageView.backgroundColor = [UIColor whiteColor];
     }
     return _imageView;
 }

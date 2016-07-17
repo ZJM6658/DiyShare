@@ -25,28 +25,6 @@
     return self;
 }
 
-
-- (void)nslogString:(NSString *)string {
-    
-    NSMutableArray * array=[NSMutableArray arrayWithArray:[string   componentsSeparatedByString:@","]];
-    NSString *resultStr=[array componentsJoinedByString:@""];
-    
-//    for (int i = 2; i <= resultStr.length; i++) {
-//        NSLog(@"string=%@",[resultStr substringToIndex:i]);
-//    }
-//    for (int i = 1; i <= resultStr.length - 2; i++) {
-//        NSLog(@"string==%@",[resultStr substringFromIndex:i]);
-//    }
-    
-    for (NSInteger i = 0; i <= resultStr.length - 2; i++) {
-        for (NSInteger j = 2; j <= resultStr.length - i; j++) {
-            NSRange range = NSMakeRange(i, j);
-            NSString *result = [resultStr substringWithRange:range];
-            NSLog(@"string==%@",result);
-        }
-    }
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"不带举报的分享"
@@ -90,6 +68,11 @@
 - (void)goToreportAction {
     NSLog(@"举报操作");
     
+}
+
+- (void)copyUrlAction {
+    NSLog(@"复制链接操作");
+
 }
 
 @end

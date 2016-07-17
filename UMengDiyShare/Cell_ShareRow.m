@@ -7,6 +7,7 @@
 //
 
 #import "Cell_ShareRow.h"
+//#import "M_Share.h"
 
 @interface Cell_ShareRow()<UICollectionViewDelegate, UICollectionViewDataSource> {
     UICollectionView *_collectView;
@@ -25,7 +26,7 @@
 
 - (UICollectionView *)_collectView{
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
-    [flowLayout setItemSize:CGSizeMake(100, 100)];//设置cell的尺寸
+    [flowLayout setItemSize:CGSizeMake(90, 90)];//设置cell的尺寸
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];//设置其布局方向
     flowLayout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5);//设置其边界
     flowLayout.minimumInteritemSpacing = 5;
@@ -66,6 +67,13 @@
     } @catch (NSException *exception) {
         
     }
+    
+//    使用模型的解析方法
+//    M_Share *shareModel = _dataSource[indexPath.row];
+//    if ([self.actionVC respondsToSelector:shareModel.selector]) {
+//#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+//        [self.actionVC performSelector:shareModel.selector withObject:nil];
+//    }
 
 }
 

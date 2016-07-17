@@ -18,6 +18,7 @@
 		154A13531D32A80C001E47F3 /* Cell_ShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13521D32A80C001E47F3 /* Cell_ShareItem.m */; };
 		154A13561D361731001E47F3 /* V_MyShareSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13551D361731001E47F3 /* V_MyShareSheet.m */; };
 		154A13591D3618BA001E47F3 /* Cell_ShareRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13581D3618BA001E47F3 /* Cell_ShareRow.m */; };
+		154A13691D3B33B8001E47F3 /* M_Share.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13681D3B33B8001E47F3 /* M_Share.m */; };
 		637B3DA117FF9C383E1C8357 /* libPods-UMengDiyShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B9272268F2FAF368AC7CB4 /* libPods-UMengDiyShare.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		154A13551D361731001E47F3 /* V_MyShareSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V_MyShareSheet.m; sourceTree = "<group>"; };
 		154A13571D3618BA001E47F3 /* Cell_ShareRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell_ShareRow.h; sourceTree = "<group>"; };
 		154A13581D3618BA001E47F3 /* Cell_ShareRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell_ShareRow.m; sourceTree = "<group>"; };
+		154A13671D3B33B8001E47F3 /* M_Share.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M_Share.h; sourceTree = "<group>"; };
+		154A13681D3B33B8001E47F3 /* M_Share.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M_Share.m; sourceTree = "<group>"; };
 		6F73E9E809FDC460CE875D1D /* Pods-UMengDiyShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMengDiyShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-UMengDiyShare/Pods-UMengDiyShare.release.xcconfig"; sourceTree = "<group>"; };
 		C4B9272268F2FAF368AC7CB4 /* libPods-UMengDiyShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UMengDiyShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -122,6 +125,8 @@
 				154A131F1D328B16001E47F3 /* AppDelegate.m */,
 				154A13211D328B16001E47F3 /* ViewController.h */,
 				154A13221D328B16001E47F3 /* ViewController.m */,
+				154A13671D3B33B8001E47F3 /* M_Share.h */,
+				154A13681D3B33B8001E47F3 /* M_Share.m */,
 				154A13541D361731001E47F3 /* V_MyShareSheet.h */,
 				154A13551D361731001E47F3 /* V_MyShareSheet.m */,
 				154A134E1D329265001E47F3 /* V_BottomShare.h */,
@@ -368,6 +373,7 @@
 				154A13231D328B16001E47F3 /* ViewController.m in Sources */,
 				154A13201D328B16001E47F3 /* AppDelegate.m in Sources */,
 				154A13531D32A80C001E47F3 /* Cell_ShareItem.m in Sources */,
+				154A13691D3B33B8001E47F3 /* M_Share.m in Sources */,
 				154A13591D3618BA001E47F3 /* Cell_ShareRow.m in Sources */,
 				154A131D1D328B16001E47F3 /* main.m in Sources */,
 				154A13501D329265001E47F3 /* V_BottomShare.m in Sources */,
