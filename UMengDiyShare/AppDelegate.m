@@ -19,7 +19,6 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     ViewController *mainVC = [[ViewController alloc]init];
     UINavigationController *naviVC = [[UINavigationController alloc]initWithRootViewController:mainVC];
-    
     self.window.rootViewController = naviVC;
 
     return YES;

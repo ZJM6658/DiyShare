@@ -20,11 +20,11 @@
 - (void)layoutCellWithData:(NSArray *)dataArray {
     _dataSource = dataArray;
     if (!_collectView) {
-        [self addSubview:self._collectView];
+        [self addSubview:self.collectView];
     }
 }
 
-- (UICollectionView *)_collectView{
+- (UICollectionView *)collectView{
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
     [flowLayout setItemSize:CGSizeMake(90, 90)];//设置cell的尺寸
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];//设置其布局方向

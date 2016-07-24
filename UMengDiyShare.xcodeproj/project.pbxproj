@@ -14,7 +14,6 @@
 		154A132B1D328B16001E47F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154A13291D328B16001E47F3 /* LaunchScreen.storyboard */; };
 		154A13361D328B17001E47F3 /* UMengDiyShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13351D328B17001E47F3 /* UMengDiyShareTests.m */; };
 		154A13411D328B17001E47F3 /* UMengDiyShareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13401D328B17001E47F3 /* UMengDiyShareUITests.m */; };
-		154A13501D329265001E47F3 /* V_BottomShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A134F1D329265001E47F3 /* V_BottomShare.m */; };
 		154A13531D32A80C001E47F3 /* Cell_ShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13521D32A80C001E47F3 /* Cell_ShareItem.m */; };
 		154A13561D361731001E47F3 /* V_MyShareSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13551D361731001E47F3 /* V_MyShareSheet.m */; };
 		154A13591D3618BA001E47F3 /* Cell_ShareRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 154A13581D3618BA001E47F3 /* Cell_ShareRow.m */; };
@@ -56,8 +55,6 @@
 		154A133C1D328B17001E47F3 /* UMengDiyShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UMengDiyShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		154A13401D328B17001E47F3 /* UMengDiyShareUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMengDiyShareUITests.m; sourceTree = "<group>"; };
 		154A13421D328B17001E47F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		154A134E1D329265001E47F3 /* V_BottomShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V_BottomShare.h; sourceTree = "<group>"; };
-		154A134F1D329265001E47F3 /* V_BottomShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V_BottomShare.m; sourceTree = "<group>"; };
 		154A13511D32A80C001E47F3 /* Cell_ShareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell_ShareItem.h; sourceTree = "<group>"; };
 		154A13521D32A80C001E47F3 /* Cell_ShareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell_ShareItem.m; sourceTree = "<group>"; };
 		154A13541D361731001E47F3 /* V_MyShareSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V_MyShareSheet.h; sourceTree = "<group>"; };
@@ -129,8 +126,6 @@
 				154A13681D3B33B8001E47F3 /* M_Share.m */,
 				154A13541D361731001E47F3 /* V_MyShareSheet.h */,
 				154A13551D361731001E47F3 /* V_MyShareSheet.m */,
-				154A134E1D329265001E47F3 /* V_BottomShare.h */,
-				154A134F1D329265001E47F3 /* V_BottomShare.m */,
 				154A13571D3618BA001E47F3 /* Cell_ShareRow.h */,
 				154A13581D3618BA001E47F3 /* Cell_ShareRow.m */,
 				154A13511D32A80C001E47F3 /* Cell_ShareItem.h */,
@@ -376,7 +371,6 @@
 				154A13691D3B33B8001E47F3 /* M_Share.m in Sources */,
 				154A13591D3618BA001E47F3 /* Cell_ShareRow.m in Sources */,
 				154A131D1D328B16001E47F3 /* main.m in Sources */,
-				154A13501D329265001E47F3 /* V_BottomShare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
