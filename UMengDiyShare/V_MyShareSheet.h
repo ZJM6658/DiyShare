@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Cell_ShareRow.h"
 #import "WXApi.h"
+
 typedef void (^setObjectNil) (void);
 
 @interface V_MyShareSheet : UIView

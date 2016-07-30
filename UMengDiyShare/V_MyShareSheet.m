@@ -19,6 +19,7 @@
 
 @implementation V_MyShareSheet
 
+#pragma mark - initialize
 - (instancetype)initWithViewType:(NSInteger)viewtype {
     self= [super initWithFrame:[UIApplication sharedApplication].keyWindow.bounds];
     if (self) {
@@ -29,6 +30,7 @@
     return self;
 }
 
+#pragma mark - layoutUI
 - (void)layoutUI {
     //灰色背景
     _backLabel = [[UILabel alloc]initWithFrame:self.frame];
@@ -43,6 +45,18 @@
     [self addSubview:_backLabel];
 }
 
+#pragma mark - outside methods
+/**
+ *  添加view到window上
+ */
+- (void)show{
+    [[[UIApplication sharedApplication]keyWindow]addSubview:self];
+}
+
+#pragma mark - private methods
+/**
+ *  退出动画
+ */
 - (void)cancel{
     [UIView animateWithDuration:0.3 animations:^{
         _backLabel.alpha = 0.0;
@@ -61,16 +75,20 @@
     }
 }
 
-//构造数据源
+/**
+ *  构造数据源+配置控件属性
+ *
+ *  @return nil
+ */
 - (void)generateDataWithViewType:(NSInteger)viewtype {
     //使用模型的构造方法
-    //    M_Share *wechatModel = [[M_Share alloc]init];
-    //    wechatModel.title = @"微信";
-    //    wechatModel.imageName = @"wechat_icon";
-    //    wechatModel.selector = @selector(shareToWeChatAction);
-    //    [sectionOne addObject:wechatModel];
-    //
-    //    [_dataSource addObject:sectionOne];
+//        M_Share *wechatModel = [[M_Share alloc]init];
+//        wechatModel.title = @"微信";
+//        wechatModel.imageName = @"wechat_icon";
+//        wechatModel.selector = @selector(shareToWeChatAction);
+//        [sectionOne addObject:wechatModel];
+//    
+//        [_dataSource addObject:sectionOne];
     
     
     BOOL isWXInstall = YES;//= [WXApi isWXAppInstalled];
@@ -128,10 +146,7 @@
     }];
 }
 
-- (void)show{
-    [[[UIApplication sharedApplication]keyWindow]addSubview:self];
-}
-
+#pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return _dataSource.count;
 }
@@ -152,6 +167,7 @@
     return cell;
 }
 
+#pragma mark - UITableViewDelegate
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UILabel *headLabel = [[UILabel alloc]init];
     headLabel.font = [UIFont systemFontOfSize:12];
@@ -174,7 +190,6 @@
     }
     return nil;
 }
-
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 20;

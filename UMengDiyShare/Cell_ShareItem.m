@@ -11,6 +11,7 @@
 
 @implementation Cell_ShareItem
 
+#pragma mark - outside methods
 - (void)layoutUI:(id )shareModel {
     if (!_imageView) {
         [self.contentView addSubview:self.imageView];
@@ -30,6 +31,7 @@
 
 }
 
+#pragma mark - getter & setter
 - (UIImageView *)imageView {
     _imageView = [[UIImageView alloc]initWithFrame:CGRectMake(20, 10, 60, 60)];
     _imageView.backgroundColor = [UIColor whiteColor];

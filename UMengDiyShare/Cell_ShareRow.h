@@ -12,8 +12,8 @@
 
 @interface Cell_ShareRow : UITableViewCell
 
-- (void)layoutCellWithData:(NSArray *)dataArray;
-
 @property (nonatomic, weak) id actionVC;
+
+- (void)layoutCellWithData:(NSArray *)dataArray;
 
 @end

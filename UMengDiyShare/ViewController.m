@@ -17,6 +17,7 @@
 
 @implementation ViewController
 
+#pragma mark - initialize
 - (instancetype)init {
     if (self = [super init]) {
         self.view.backgroundColor = [UIColor whiteColor];
@@ -25,6 +26,7 @@
     return self;
 }
 
+#pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"不带举报的分享"
@@ -40,9 +42,10 @@
     self.navigationItem.rightBarButtonItem.tag = 101;
 }
 
+#pragma mark - private methods
 - (void)showShareView:(UIBarButtonItem *)sender {
-    NSInteger viewtype = sender.tag - 100;
-    _myShareSheet = [[V_MyShareSheet alloc]initWithViewType:viewtype];
+    NSInteger viewType = sender.tag - 100;
+    _myShareSheet = [[V_MyShareSheet alloc]initWithViewType:viewType];
     _myShareSheet.actionVC = self;
     _myShareSheet.ObjectNil = ^{
         _myShareSheet = nil;
